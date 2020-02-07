@@ -47,13 +47,12 @@
 		pattern1 ... patern11	= pattern background
 		menu-vertical-hide		= hidden, open on click
 	
-	-->
-	<script src="calcul.js" async></script>
+	-->	
+	
+
+
 	<section ID="home">
-	<body class="smoothscroll enable-animation">
-
-		
-
+	<body class="smoothscroll enable-animation " ">
 
 		<!-- wrapper -->
 		<div id="wrapper">
@@ -96,7 +95,7 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left scrollTo" href="#top">
+						<a class="logo float-left " href="index-onepage-elevator.html#home">
 							<img src="assets\images\ImgRE\R2.png" alt="" />
 						</a>
 
@@ -159,203 +158,123 @@
 			</div>
 
 
-            <h1>SUBMISSION FORM</h1>
-            
-            
-            
-            Type of the building :  
-            <select  id="Btype" onchange="UpdateDisplay()">
-                <option value="" selected disabled hidden>Choose here</option>
-                <option value="residential"              >Residential</option>
-                <option value="commercial"               >Commercial</option>
-                <option value="corporate"                >Corporate</option>
-                <option value="hybrid"                   >Hybrid</option>
-            </select> 
-            
-
-            <div id="div1" style="display:none" onkeyup="CalculEstNbrElevators()">
-                Number of apartements in the building : 
-                <input id="NbrApartements" type="number" min="0" >            
-            </div>
-		    <div id="div2" style="display:none" onkeyup="CalculEstNbrElevators() ">
-                Number of floors : 
-                <input id="NbrFloor" type="number" min="0">
-            </div>
-            <div id="div3" style="display:none" onkeyup="CalculEstNbrElevators()">
-                Number of basements : 
-                <input id="NbrBasements" type="number" min="0" >
-            </div>
-            <div id="div4" style="display:none">
-                Number of distinct businesses :
-                <input id="NbrBusinesses" type="number" min="0" >
-            </div>
-            <div id="div5" style="display:none">
-                Number of parking space available :
-                <input id="NbrParking" type="number" min="0" >    
-            </div>
-            <div id="div6" style="display:none" onkeyup="CalculEstNbrElevators()" >
-                Number of elevator cages to be deployed :
-                <input id="NbrElevatorCage" type="number" min="0">
-            </div>
-            <div id="div7" style="display:none">
-                Number of separate tenant companies :
-                <input id="NbrCompanies" type="number" min="0">
-            </div>
-            <div id="div8" style="display:none">
-                Maximum number of occupants per floor :
-                <input id="NbrOccupantsMax" type="number" min="0" onkeyup="CalculEstNbrElevators()">
-            </div>
-            <div id="div9" style="display:none">
-                Number of hours of activity of the building
-                <input id="NbrHours" type="number" max="24" >
+            <div class="heading-title heading-dotted text-center ">
+				<h2 >GET A SUBMISSION</h2>
 			</div>
-			<div id="div10" style="display:none">
-                Estimate number of elevators : 
-                <input id="EstNbrElevators" type="number" readonly >
-			</div>
-			<div id="div11" style="display:''"  align="center" onchange="CalculBudget()">
-				The range of elevators :  
-				<input id="Standard" 	name="ElevatorCat" type=radio checked  > Standard  
-				<input id="Premium" 	name="ElevatorCat" type=radio > Premium   
-				<input id="Excelium" 	name="ElevatorCat" type=radio > Excelium  
-			</div>
-			<div id="div12" style="display:''"  align="center" >
-				Unit price : 
-				<input id="UnitPrice" type="text" readonly><br>
-				Cost of installation :
-				<input id="InstallCost" type="text" readonly><br>
-				Total Cost :
-				<input id="TotalCost" type="text" readonly><br>
+            
+        <div class="container">    
+            <div class="row">
+				<div class="col-md-12" style="text-align: center;" >
+            		Type of the building :
+					<select  id="Btype" onchange="UpdateDisplay()">
+                		<option value="" selected disabled		 >Choose here</option>
+                		<option value="residential"              >Residential</option>
+                		<option value="commercial"               >Commercial</option>
+            	    	<option value="corporate"                >Corporate</option>
+                		<option value="hybrid"                   >Hybrid</option>
+					</select>
+				</div> 
 			</div>
 
-
+			<div class="row" >
+				<div id="div1" style="display:none "  >
+					<label >Number of apartements in the building :<input id="NbrApartements" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label> 
+				</div>
+			</div>
+		
+            <div class="row" >
+				<div id="div2" style="display:none">
+					<label>Number of floors :<input id="NbrFloor" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label>
+				</div>
+			</div>
+			<div class="row" >
+				<div id="div3" style="display:none">
+			    	<label>Number of basements :<input id="NbrBasements" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label> 
+				</div>
+			</div>
+		
+            <div class="row" >
+				<div id="div4" style="display:none"  >
+					<label>Number of distinct businesses :<input id="NbrBusinesses" type="number" min="0" onkeyup="CalculEstNbrElevators() "></label>
+	           	</div>
+			</div>
+			<div class="row">
+				<div id="div5" style="display:none" >
+					<label>Number of parking space available :<input id="NbrParking" type="number" min="0" onkeyup="CalculEstNbrElevators() "> </label>
+				</div>	
+			</div>
 			
+			<div class="row"  >
+				<div id="div6" style="display:none">
+					<label>Number of elevator cages to be deployed :<input id="NbrElevatorCage" type="number" min="0" onkeyup="CalculEstNbrElevators() "></label>
+				</div>
+			</div>
+			<div class="row"  >
+				<div id="div7" style="display:none">
+					<label>Number of separate tenant companies :<input id="NbrCompanies" type="number" min="0"onkeyup="CalculEstNbrElevators() "></label>
+				</div>
+			</div>
+            <div class="row"  >
+				<div id="div8" style="display:none">
+					<label>Maximum number of occupants per floor :<input id="NbrOccupantsMax" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label>
+				</div>	
+			</div>
+            <div class="row"  >
+				<div id="div9" style="display:none">
+					<label>Number of hours of activity of the building :<input id="NbrHours" type="number" max="24" onkeyup="CalculEstNbrElevators() "></label>
+                </div>
+			</div>
 			
-            <script>
-                function choix() {
-                    var x = document.getElementById("Btype");
-                    var i = x.selectedIndex;
-                    return i;
-                }
-            </script>
-
-			<script>
-				function CalculEstNbrElevators(){
-					if (choix()==1){
-					var AvgAptPerFloor= Math.ceil(document.getElementById("NbrApartements").value/document.getElementById("NbrFloor").value);
-					var NbrColumn=(Math.ceil((document.getElementById("NbrFloor").value)/20));	
-					var Est = (Math.ceil(AvgAptPerFloor/6))*NbrColumn ;
-					document.getElementById("EstNbrElevators").value = Est; 
-					}
-					else if (choix()==2){
-					document.getElementById("EstNbrElevators").value =  document.getElementById("NbrElevatorCage").value;
-					}
-					else if ((choix()==3)||(choix()==4)){
-					var NbrTotalFloor = Number(document.getElementById("NbrFloor").value) + Number(document.getElementById("NbrBasements").value);
-					var NbrTotalOccupants = Number(document.getElementById("NbrOccupantsMax").value) * Number(NbrTotalFloor);
-					var NbrColumn=Math.ceil(Number(NbrTotalFloor)/20);
-					var NbrCage=Math.ceil(Number(NbrTotalOccupants)/1000);
-					var Est = Math.ceil( Number(NbrCage)/Number(NbrColumn));
-					document.getElementById("EstNbrElevators").value = Est;	
-					}
-					CalculBudget();
-				}
-			</script>         
-
-			<script>
-				function CalculBudget(){
-					if (document.getElementById("Standard").checked){
-						var pu = 7565;
-						var pourcentage = 0.1;
-					}
-					if (document.getElementById("Premium").checked){
-						var pu = 12345;
-						var pourcentage = 0.13;
-					}
-					if (document.getElementById("Excelium").checked){
-						var pu = 15400;
-						var pourcentage = 0.16;
-					}
-					var nb= document.getElementById("EstNbrElevators").value;
-					var ic= (Number(pu)*Number(pourcentage)*Number(nb));
-					document.getElementById("UnitPrice").value=(pu).toFixed(2);
-					document.getElementById("InstallCost").value=(ic).toFixed(2);
-					document.getElementById("TotalCost").value=(Number(ic) + (Number(pu)*Number(nb))).toFixed(2);	
-				}
-			</script>
-			
-			<script>
-				function UpdateDisplay() 
-                {
-                        if (choix()==1){
-                        document.getElementById("div1").style.display="";
-                        document.getElementById("div2").style.display="";
-                        document.getElementById("div3").style.display="";
-                        document.getElementById("div5").style.display="none";
-                        document.getElementById("div4").style.display="none";
-                        document.getElementById("div6").style.display="none";
-                        document.getElementById("div7").style.display="none";
-                        document.getElementById("div8").style.display="none";
-                        document.getElementById("div9").style.display="none";
-						document.getElementById("div10").style.display="";
-						document.getElementById("div11").style.display="";
-						CalculEstNbrElevators();
-						document.getElementById("div12").style.display="";
-						CalculBudget();
-					    }
-						else if (choix()==2){
-                        document.getElementById("div4").style.display="";
-                        document.getElementById("div2").style.display="";
-                        document.getElementById("div3").style.display="";
-                        document.getElementById("div5").style.display="";
-                        document.getElementById("div6").style.display="";
-                        document.getElementById("div1").style.display="none";
-                        document.getElementById("div7").style.display="none";
-                        document.getElementById("div8").style.display="none";
-                        document.getElementById("div9").style.display="none";
-						document.getElementById("div10").style.display="";
-						CalculEstNbrElevators();
-						document.getElementById("div12").style.display="";
-						CalculBudget();	
-						}
-                        else if (choix()==3){
-                        document.getElementById("div7").style.display="";
-                        document.getElementById("div2").style.display="";
-                        document.getElementById("div3").style.display="";
-                        document.getElementById("div5").style.display="";
-                        document.getElementById("div8").style.display="";
-                        document.getElementById("div1").style.display="none";
-                        document.getElementById("div4").style.display="none";
-                        document.getElementById("div6").style.display="none";
-                        document.getElementById("div9").style.display="none";
-						document.getElementById("div10").style.display="";
-						CalculEstNbrElevators();
-						document.getElementById("div12").style.display="";
-						CalculBudget();
-						}
-                        else if (choix()==4){
-                        document.getElementById("div4").style.display="";
-                        document.getElementById("div2").style.display="";
-                        document.getElementById("div3").style.display="";
-                        document.getElementById("div5").style.display="";
-                        document.getElementById("div8").style.display="";
-                        document.getElementById("div9").style.display="";
-                        document.getElementById("div1").style.display="none";
-                        document.getElementById("div6").style.display="none";
-                        document.getElementById("div7").style.display="none";
-						document.getElementById("div10").style.display="";
-						CalculEstNbrElevators();	
-						document.getElementById("div12").style.display="";
-						CalculBudget();
-						}
-                }
-			</script>
-
-
-
-            <br><br><br><br><brr><br><br><br><br>            
+			<div class="row"   style="padding-top: 3%; padding-bottom: 3%;"    >
+				<div  id="div10" class="col-md-12" style="text-align: center;display:''">
+					<label>Estimate number of elevators : <input id="EstNbrElevators" type="number" disabled ></label>
+                </div>	
+			</div>
 		</div>
+			<!-- Ligne categorie d elevateur -->
+			<div class="container" >
+				<div class="row"  id="div11" style="text-align: center; display:''"   onchange="CalculBudget()">
+				  <div class="col-md-12">
+					The range of elevators : &nbsp;&nbsp;&nbsp;
+					<input id="Standard" 	name="ElevatorCat" type=radio checked  > Standard &nbsp;&nbsp;&nbsp;
+					<input id="Premium" 	name="ElevatorCat" type=radio > Premium &nbsp;&nbsp;&nbsp;
+					<input id="Excelium" 	name="ElevatorCat" type=radio > Excelium 
+				  </div>
+				</div>
+			</div>
+			
+			<!-- tableau estimation: resultat des calculs  -->
+			<div class="container" id="div12"  style="text-align: center; display:''" >
+				
+				<div class="row">
+					<div class="col-md-12">
+						Unit price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	
+						<input id="UnitPrice" type="text" disabled>
+						CAD
+					</div>
+				</div>
+			  	
+			  	<div class="row" >
+					<div class="col-md-12">
+						Cost of installation 
+						<input id="InstallCost" type="text" disabled>
+						CAD
+					</div>
+				</div>
+				  
+				<div class="row" >
+					<div class="col-md-12">
+						Total Cost &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						<input id="TotalCost" type="text" disabled>
+						CAD
+					</div>
+		  		</div>
+				
+			</div>	
+		
+                       
 		</div>
+		<br><br><br>
 <!-- Parallax -->
 <section class="parallax parallax-1" style="background-image: url('demo_files/images/1200x800/34-min.jpg');">
     <div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
@@ -457,9 +376,9 @@
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
 		<script src="assets/js/scripts.js"></script>
-		
+		<script src="assets/js/calcul.js" async></script>
+		<script src="assets/js/display.js" async></script>
 		
 
 		<!-- REVOLUTION SLIDER -->

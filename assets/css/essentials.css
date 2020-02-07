@@ -2617,10 +2617,10 @@ section.dark table tr.odd {
 	section.dark table tr.odd:hover {
 		background-color:#888;
 	}
-section.dark table tr.even {
+section.dark tr.even {
 	color:#ddd;
 }
-	section.dark table tr.even:hover {
+	section.dark tr.even:hover {
 		background-color:rgba(0,0,0,0.5);
 	}
 section.dark .table-bordered {
@@ -7514,7 +7514,7 @@ section.dark .card-default>.card-heading {
 .card .table {
 	background-color:transparent;
 }
-	section.dark table {
+	section.dark {
 		color:#fff;
 		background-color:#373737;
 	}
@@ -7526,7 +7526,7 @@ section.dark .card-default>.card-heading {
 	section.dark .card .card-heading.card-heading-transparent h2 {
 		color:#eaeaea !important;
 	}
-.card table thead {
+.card thead {
 	background-color:rgba(0,0,0,0.01);
 }
 	section.dark .table>thead>tr>th {
@@ -12059,8 +12059,8 @@ div.testimonial p {
 }
 
 div.testimonial>figure>img {
-	width:65px;
-	height:65px;
+	width:100px;
+	height:100px;
 
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
