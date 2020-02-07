@@ -11,7 +11,7 @@
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 		<!-- WEB FONTS : use %7C instead of | (pipe) -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text/css" />
 
 		<!-- CORE CSS -->
 		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -52,7 +52,7 @@
 
 
 	<section ID="home">
-	<body class="smoothscroll enable-animation " ">
+	<body class="smoothscroll enable-animation " >
 
 		<!-- wrapper -->
 		<div id="wrapper">
@@ -162,7 +162,7 @@
 				<h2 >GET A SUBMISSION</h2>
 			</div>
             
-        <div class="container">    
+        <div class="container">   
             <div class="row">
 				<div class="col-md-12" style="text-align: center;" >
             		Type of the building :
@@ -175,10 +175,11 @@
 					</select>
 				</div> 
 			</div>
-
+		</div>	
+		<div class="container"> 
 			<div class="row" >
 				<div id="div1" style="display:none "  >
-					<label >Number of apartements in the building :<input id="NbrApartements" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label> 
+					<label >Number of apartements :<input id="NbrApartements" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label> 
 				</div>
 			</div>
 		
@@ -187,6 +188,7 @@
 					<label>Number of floors :<input id="NbrFloor" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label>
 				</div>
 			</div>
+
 			<div class="row" >
 				<div id="div3" style="display:none">
 			    	<label>Number of basements :<input id="NbrBasements" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label> 
@@ -198,6 +200,7 @@
 					<label>Number of distinct businesses :<input id="NbrBusinesses" type="number" min="0" onkeyup="CalculEstNbrElevators() "></label>
 	           	</div>
 			</div>
+
 			<div class="row">
 				<div id="div5" style="display:none" >
 					<label>Number of parking space available :<input id="NbrParking" type="number" min="0" onkeyup="CalculEstNbrElevators() "> </label>
@@ -209,16 +212,19 @@
 					<label>Number of elevator cages to be deployed :<input id="NbrElevatorCage" type="number" min="0" onkeyup="CalculEstNbrElevators() "></label>
 				</div>
 			</div>
+
 			<div class="row"  >
 				<div id="div7" style="display:none">
 					<label>Number of separate tenant companies :<input id="NbrCompanies" type="number" min="0"onkeyup="CalculEstNbrElevators() "></label>
 				</div>
 			</div>
+
             <div class="row"  >
 				<div id="div8" style="display:none">
 					<label>Maximum number of occupants per floor :<input id="NbrOccupantsMax" type="number" min="0" onkeyup="CalculEstNbrElevators()"></label>
 				</div>	
 			</div>
+
             <div class="row"  >
 				<div id="div9" style="display:none">
 					<label>Number of hours of activity of the building :<input id="NbrHours" type="number" max="24" onkeyup="CalculEstNbrElevators() "></label>
@@ -230,6 +236,7 @@
 					<label>Estimate number of elevators : <input id="EstNbrElevators" type="number" disabled ></label>
                 </div>	
 			</div>
+
 		</div>
 			<!-- Ligne categorie d elevateur -->
 			<div class="container" >
@@ -244,11 +251,11 @@
 			</div>
 			
 			<!-- tableau estimation: resultat des calculs  -->
-			<div class="container" id="div12"  style="text-align: center; display:''" >
-				
+			<div class="container " id="div12" style=" text-align: right;display:''" >
+				<div class="row"></div><div class="col-md-12"  >ESTIMATE PRICE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
 				<div class="row">
-					<div class="col-md-12">
-						Unit price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	
+					<div class="col-md-12"  >
+						Unit price  	
 						<input id="UnitPrice" type="text" disabled>
 						CAD
 					</div>
@@ -256,7 +263,7 @@
 			  	
 			  	<div class="row" >
 					<div class="col-md-12">
-						Cost of installation 
+						Installation Cost 
 						<input id="InstallCost" type="text" disabled>
 						CAD
 					</div>
@@ -264,7 +271,7 @@
 				  
 				<div class="row" >
 					<div class="col-md-12">
-						Total Cost &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+						Total Cost
 						<input id="TotalCost" type="text" disabled>
 						CAD
 					</div>
