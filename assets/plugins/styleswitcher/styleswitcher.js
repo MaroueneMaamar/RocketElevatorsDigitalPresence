@@ -395,7 +395,7 @@ jQuery(document).ready(function() {
 		jQuery("#css_dark_skin").remove();
 		jQuery('body').attr('data-background', '');
 		jQuery('.backstretch').remove();
-		jQuery("a.logo img").attr('src', 'assets/images/_smarty/logo.png');
+		jQuery("a.logo img").attr('src', '');
 
 		jQuery("#is_light").trigger('click');
 		jQuery("#is_wide").trigger('click');

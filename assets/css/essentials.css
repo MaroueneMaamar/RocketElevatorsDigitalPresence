@@ -3422,10 +3422,7 @@ img.mfp-img {
 		background-color:#333;
 	}
 
-/* mouse grab icon */
-.grabbing { 
-    cursor:url(../images/_smarty/grabbing.png) 8 8, move;
-}
+
 
 /* fix */
 .owl-carousel  .owl-wrapper,
